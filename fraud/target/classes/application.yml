@@ -1,0 +1,25 @@
+server:
+    port: 8081
+spring:
+    application:
+        name: fraud
+    datasource:
+        username: postgres
+        url: jdbc:postgresql://localhost:2345/fraud
+        # url would normally be a different database, but we are using same instance
+        password: Zombie999!
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          format_sql: true
+      hibernate:
+        ddl-auto: create-drop
+#        ddl-auto: update
+      show-sql: true
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka
+        fetch-registry: true
+        register-with-eureka: true
