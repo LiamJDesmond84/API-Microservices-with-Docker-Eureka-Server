@@ -7,7 +7,7 @@ spring:
         username: postgres
         url: jdbc:postgresql://localhost:2345/customer
         # if when we start the applcation name it is a container then instead of localhost it would be - the network name - I think
-        password: Zombie999!
+        password: password
     jpa:
       properties:
         hibernate:
