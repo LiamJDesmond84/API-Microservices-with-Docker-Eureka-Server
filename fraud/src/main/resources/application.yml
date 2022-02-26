@@ -7,7 +7,7 @@ spring:
         username: postgres
         url: jdbc:postgresql://localhost:2345/fraud
         # url would normally be a different database, but we are using same instance
-        password: Zombie999!
+        password: password
     jpa:
       properties:
         hibernate:
